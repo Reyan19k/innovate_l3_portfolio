@@ -1,4 +1,6 @@
+from ast import Num
 import random
+import string
 
 # print("this is my file")
 # # = to comment
@@ -113,18 +115,85 @@ import random
 
 # cash_with(1000,56585485)
 
-fav_games = [
-    "Farcry 3",
-    "The Outerworlds",
-    "Starwars Jedi: Fallen order"
-]
-print(fav_games)
-fav_games [0] = "Farcry 6"
-print(fav_games [0])
-print(fav_games)
+# fav_games = [
+#     "Farcry 3",
+#     "The Outerworlds",
+#     "Starwars Jedi: Fallen order"
+# ]
+# # print(fav_games)
+# # fav_games [0] = "Farcry 6"
+# # print(fav_games [0])
+# # print(fav_games)
 
-fav_games.append("Farcy 3")
-print(fav_games)
+# # fav_games.append("Farcy 3")
+# # print(fav_games)
 
-fav_games.pop(0)
-print(fav_games)
+# # fav_games.pop(0)
+# # print(fav_games)
+
+# for i in fav_games:
+#     print(i)
+
+# for i in range(2,10,1):
+#     print(i)
+
+# for i in range(10,-1,-1): # run the numbers backwardsby putting 10 as the strating point and -1(0) as the end point
+#     print(i)
+
+# num = 0
+
+# while num < 10:
+#     num +=1
+#     print(num)
+
+# my_num = 19
+# computer_num = random.randint(1,50)
+
+# while my_num != computer_num:
+#     print(f"Number{my_num} and number {computer_num} do not match")
+#     computer_num = random.randint(1,50)
+
+# print(f"Number {my_num} and number {computer_num} match")
+
+# welcome_msg = "Welcome to Code Nation"
+# msg_length = print(len(welcome_msg))
+# msg_length
+
+# #part2 checking if odd or even
+# name = "Welcome to code nation"
+# length = len(name)%2
+# # If a number has a remainder of 0 when divided by 2
+# # the number is even.
+# # If there is a remainder then it is odd.
+# if length == 0:
+#     print (name, "even")
+# else:
+#     print (name, "odd")
+
+# welcome_msg = "Welcome to Code Nation"
+# msg_length = len(welcome_msg)
+# msg_length_even = len(welcome_msg)%2
+# print(msg_length)
+# if msg_length_even == 0:
+#     print("The length of the welcome message is even")
+# else:
+#     print(welcome_msg)
+#     print("Your message length isnt even")
+
+# alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u", "v", "w","x","y","z"]
+# for i in alpha:
+#     print(i)
+
+# user_num = int(input("Choose and number between 0 and 25: "))
+
+# print(alpha[user_num], "is what your number represents in the alphabet")
+
+#-----------------------------------------------------------------Example 2----------------------------------------------------------------------#
+
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u", "v", "w","x","y","z"]
+for i in alpha:
+    print(i)
+
+answer = int(input ("Type a number to see the corresponding letter from the alphabet: "))
+answer -=1
+print(alpha[answer])
