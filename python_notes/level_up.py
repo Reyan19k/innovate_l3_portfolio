@@ -20,7 +20,7 @@
 # else:
 #     print("no name was provided")
 
-# allowed = ["Reyan", "Andy", "Bob", "Carol", "Dean"]
+# allowed = ["Reyan", "Barry", "Bruce", "Arthor", "Hal"]
 # name=input("What is your name?: ")
 
 # while name not in allowed:
@@ -37,4 +37,5 @@ def add_up():
         print(int(num1) + int(num2))
     except:
         print("Please use number only")
+        add_up()
 add_up()
