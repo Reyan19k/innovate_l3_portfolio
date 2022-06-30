@@ -47,7 +47,7 @@
 # # my_dog.pop("mood") # this will remove a key
 # print(my_dog)
 
-#------------------------------------------------------------------Activity 2----------------------------------------------------------------------#
+#------------------------------------------------------------------Activity 2--------------------------------------------------------------------#
 
 dif_countries = {
     "UK": "London",
@@ -57,6 +57,7 @@ dif_countries = {
     "Italy": "Rome"
 }
 
+dif_countries.setdefault("Peru","Lima")
 dif_countries.update({"USA":"Washington DC"})
 dif_countries.update({"Australia":"Canberra"})
 
@@ -67,4 +68,39 @@ dif_countries.update({"Spain":"Spanish"})
 dif_countries.update({"Italy":"Italian"})
 dif_countries.update({"USA":"English"})
 dif_countries.update({"Australia":"English"})
-print(dif_countries)
+
+# print(dif_countries)
+
+for i in dif_countries.items():
+    print(i)
+
+# print(list(dif_countries))
+
+#------------------------------------------------------------------Activity 3--------------------------------------------------------------------#
+
+fav_songs = [{
+    "Artist":"My Chemical Romance",
+    "Song Name":"Sleep",
+    "Genre":"Pop Punk",
+    "Release Year":"2006"
+},
+{
+    "Artist":"Killing Joke",
+    "Song Name":"The Raven King",
+    "Genre":"Post-Punk",
+    "Release Year":"2010"
+},
+{
+    "Artist":"Radiohead",
+    "Song Name":"15 Step",
+    "Genre":"Art Rock",
+    "Release Year":"2007"
+}]
+
+print(fav_songs[1])
+
+fav_songs.append({
+
+})
+
+# del (fav_songs[1]) - Method of deleting
