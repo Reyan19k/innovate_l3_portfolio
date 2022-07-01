@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
 body {
     background-color: wheat;
 }
 
 img {
-    border-radius: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+h1, h2{
+    color: black;
+    font-family: 'koulen', cursive;
 }
 
 p {
     color: burlywood;
     font-size: 20px;
+    font-family: 'koulen', cursive;
     border-radius: 20px;
     border-style: solid;
     border-color: black;
@@ -20,32 +28,50 @@ p {
 pre a {
     color: blue;
     font-size: 18px;
+    font-family: 'koulen', cursive;
     text-decoration: none;
 }
-pre :hover{
+pre a :hover{
     color: red;
     font-size: 20px;
     border-style: solid;
     border-color: rgb(0, 0, 0, 0.2);
     background-color: rgb(0, 0, 0, 0.2);
+    font-family: 'koulen', cursive;
     border-radius: 10px;
 }
 pre :visited{
-    color: purple;
+    font-family: 'koulen', cursive;
 }
 
-nav a {
+header{
+    background-color: rgb(0, 0, 0, 0.6);
+    height: 50px;
+}
+/* /* nav a {
     
     display: flex;
     background-color: rgb(0, 0, 0, 0.6);
     color: burlywood;
     font-size: 20px;
+    font-family: 'koulen', cursive;
     text-decoration: none;
     justify-content:space-evenly
     
+} */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+nav a{
+    font-family: 'koulen', cursive;
+    color: burlywood;
+    text-decoration: none;
 }
 nav a:hover {
-    color: darkred;
+    color: rgb(0, 238, 255);
     font-size: 30px;
 }
 
@@ -54,4 +80,19 @@ nav a:hover {
 }
 .alignment{
     width: 100%;
+}
+footer{
+    color: white;
+    background-color: rgb(0, 0, 0, 1);
+    font-size: 20px;
+    font-family: 'koulen', cursive;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+}
+
+footer a{
+    color: rgb(0, 238, 255);
+    text-decoration: none;
 }
