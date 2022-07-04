@@ -1,0 +1,47 @@
+body {
+    color: black;
+}
+
+.desktop, .mobile, .title, .subtitle {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .title {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 5%;
+        display: inline-block;
+    }
+    body {
+        background-color: black;
+        color: white;
+    }
+    .mobile{
+        display: inline-block;
+    }
+}
+@media (orientation: landscape){
+    .subtitle {
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding: 5%;
+        display: inline-block;
+    }
+    .desktop{
+        display: inline-block;
+    }
+}
+
+/* @media (orientation: portrait) {
+    .mobile {
+        display: inline-block;
+    }
+}
+@media (orientation: landscape){
+    .desktop {
+        display: inline-block;
+    }
+} */

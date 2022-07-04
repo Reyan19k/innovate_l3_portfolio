@@ -1,0 +1,64 @@
+/* @media (max-width: 500px) {
+    body {
+        color: blue;
+    }
+    
+} */
+
+/* EM: A relative size based on the parent.
+<div class="hellobox"> Hello!
+<div class="insidebox">Hello!
+<div class="insidebox">Hello
+</div></div></div>
+This code is nested - inside box is inside inside box, which is inside hellobox
+If hellobox had a size of 16px, and insidebox had a size of 2em, the first inside box would be 32px - because it is 2x its parent, but the second insidebox would be 64px, because it is two times its parent
+REM: A relative size based on the browser's root size
+<div class="hellobox"> Hello!
+<div class="insidebox">Hello!
+<div class="insidebox">Hello
+</div></div></div>
+if insidebox had a size of 2rem, it would be 2x the browser's root size. It doesn't matter what any other sizes on the page are - it's reading directly from the root! */
+
+body {
+    color: red;
+}
+
+.desktop, .mobile {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .title {
+        color: yellow;
+        background-color: black;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .mobile{
+        display: inline-block;
+    }
+}
+@media (orientation: landscape){
+    .subtitle {
+        color: green;
+        background-color: orange;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .desktop{
+        display: inline-block;
+    }
+}
+
+@media (orientation: portrait) {
+    .mobile {
+        display: inline-block;
+    }
+}
+@media (orientation: landscape){
+    .desktop {
+        display: inline-block;
+    }
+}

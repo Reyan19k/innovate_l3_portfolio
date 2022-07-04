@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
-body {
+.background {
     background-color: wheat;
 }
 
@@ -95,4 +95,12 @@ footer{
 footer a{
     color: rgb(0, 238, 255);
     text-decoration: none;
+}
+.wallpaper{
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
 }
