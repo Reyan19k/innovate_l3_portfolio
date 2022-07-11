@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename ='main.css')}}">
+    <script src="{{url_for('static', filename ='app.js')}}"></script>    
+    <title>JavaScript Events</title>
+</head>
+<body onload="darkCheck(), checkCookies()">
+    <nav>
+        <button><a href="{{url_for('my_view.index')}}">Home</a></button>
+        <button><a href="{{url_for('my_view.page1')}}">Page1</a></button>
+        <button><a href="{{url_for('my_view.page2')}}">Page2</a></button>
+        <button><a href="{{url_for('my_view.page3')}}">Page3</a></button>
+        <button><a href="{{url_for('my_view.page4')}}">Page4</a></button>
+        <button><a href="{{url_for('my_view.admin')}}">Admin</a></button>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
